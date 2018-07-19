@@ -23,12 +23,12 @@ var cli = new argparse.ArgumentParser({
 });
 
 cli.addArgument(['-o', '--output'], {
-  help: `Folder to write the html ouput to.\n(Note: the folder will be )\nBy default a new "html" folder will be created in the current folder`,
+  help: `Folder to write the html ouput to.\nDefaults to './html'\n(Note: the output folder will be purged beforehand, so be careful to not accidentally specify a folder where you might have something useful)`,
   defaultValue: '-'
 });
 
 cli.addArgument(['-i', '--input'], {
-  help: `Source folder path\neg: './docs'`,
+  help: `Source folder path, eg: './docs'. Defaults to './'`,
   defaultValue: '-'
 });
 

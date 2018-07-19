@@ -6,29 +6,27 @@ Under the hood it uses [markdown-it](https://github.com/markdown-it/markdown-it)
 
 ## Install
 
-**node.js** & **bower**:
-
 ```bash
 npm install -g mermaid2html
 ```
 
-## Usage
+## Usage help
 ```
 usage: mermaid2html [-h] [-v] [-o OUTPUT] [-i INPUT]
 
 Optional arguments:  
   -h, --help            Show this help message and exit.
-  -v, --version         Show program's version number and exit.  
+  -v, --version         Show program's version number and exit.
   -o OUTPUT, --output OUTPUT
-                        Folder to write the html ouput to. (Note: the folder
-                        will be ) By default a new "html" folder will be
-                        created in the current folder
+                        Folder to write the html ouput to. Defaults to '.
+                        /html' (Note: the output folder will be purged
+                        beforehand, so be careful to not accidentally specify
+                        a folder where you might have something useful)
   -i INPUT, --input INPUT
-                        Source folder path or glob pattern eg: './docs' or '.
-                        /docs/*-some-suffix.md'
+                        Source folder path, eg: './docs'. Defaults to './'
 ```
 
-## Authors
+## Author
 
 - Razvan Pocaznoi [github/rpocaznoi](https://github.com/rpocaznoi)
 
